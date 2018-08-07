@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/alldeal.css">
+    <link rel="stylesheet" href="swiper/swiper-4.3.3.min.css">
+</head>
+<body>
+<!--顶部-->
+<div class="top">
+    <span class="top-button">發票交易</span><span class="top-button choose">中獎發票</span>
+    <a href="#" class="top-right">
+        <img src="images/exclamation.svg" alt="">
+        說明
+    </a>
+</div>
+<!--中部-->
+<div class="main">
+    <div class="moon pr">
+        <div class="arrow">
+                <span class="fl">
+                    <img src="images/left.svg" alt="">
+                </span>
+            <span class="fr">
+                    <img src="images/right.svg" alt="">
+                </span>
+        </div>
+        <div class="moon-title">2018 年 7月- 8月</div>
+    </div>
+    <div class="content">
+        <div class="none center">
+            <div>
+                <img src="images/ic-point-empty.svg" alt="">
+            </div>
+            <div class="none-title">本期沒有中獎！</div>
+        </div>
+    </div>
+</div>
+<!--底部走马灯-->
+<div class="scroll-bar">
+    <div class="scroll-bar-img">
+        <img class="speaker" src="images/speaker.svg" alt="">
+    </div>
+    <div class="swiper-container" id="scrollBar">
+        <div class="swiper-wrapper">
+            <!--swiper-no-swiping 样式禁止滑动-->
+            <div class="swiper-slide scroll-content swiper-no-swiping"><a href="#">阿斯蒂芬丽莎洒家分厘卡卢卡斯萨拉丁会计法沙拉看见对方埃里克大</a></div>
+            <div class="swiper-slide scroll-content swiper-no-swiping"><a href="#">1000 元存購物金，加贈 10,000 點</a></div>
+            <div class="swiper-slide scroll-content swiper-no-swiping"><a href="#">1000 元存購物金，加贈 10,000 點</a></div>
+        </div>
+    </div>
+    <div class="close fr">
+        <img src="images/group-3.svg" alt="">
+    </div>
+    <script>
+        document.querySelector('.close').onclick = function () {
+            document.querySelector('.scroll-bar').style.display = 'none';
+        }
+    </script>
+</div>
+<!--占位-->
+<div class="placeholder"></div>
+<script src="swiper/swiper-4.3.3.min.js"></script>
+<script src="script/scroll.js"></script>
+</body>
+</html>
